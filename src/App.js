@@ -1,11 +1,18 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-export default function App() {
+import { Home } from './components/Home';
+import { PaginaListas } from './components/PaginaListas';
+import { Perfil } from './components/Perfil';
+import Header from './components/Header';
+
+export function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Router>
+      <Header />
+      <Route path="/" exact component={Home} />
+      <Route path="/listas" component={PaginaListas} />
+      <Route path="/perfil" component={Perfil} />
+    </Router>
   );
 }
