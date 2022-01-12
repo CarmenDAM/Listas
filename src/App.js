@@ -7,11 +7,19 @@ import { Perfil } from './components/Perfil';
 import Header from './components/Header';
 import{MenuItems} from './data/MenuItems'
 
+
+function createRoutes(){
+  const listRoutes=[];
+
+  return listRoutes;
+}
+
 export function App() {
   return (
     <Router>
       <Header />
-      
+      {createRoutes()}
+
       <Route path="/" exact component={Home} />
       <Route path="/listas" component={PaginaListas} />
       <Route path="/perfil" component={Perfil} />
