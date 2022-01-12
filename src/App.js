@@ -10,7 +10,11 @@ import{MenuItems} from './data/MenuItems'
 
 function createRoutes(){
   const listRoutes=[];
-
+  for(let i=0; i<MenuItems.length;i++){
+    listRoutes.push(
+      <Route path={MenuItems[i].path} exact component={MenuItems[i].component}/>
+    );
+  }
   return listRoutes;
 }
 
@@ -20,9 +24,9 @@ export function App() {
       <Header />
       {createRoutes()}
 
-      <Route path="/" exact component={Home} />
+     {/* <Route path="/" exact component={Home} />
       <Route path="/listas" component={PaginaListas} />
-      <Route path="/perfil" component={Perfil} />
+  <Route path="/perfil" component={Perfil} />*/}
     </Router>
   );
 }
