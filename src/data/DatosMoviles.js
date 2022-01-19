@@ -40,4 +40,5 @@ export const DatosTablaMoviles = [
     imagen:'https://img-live.goboo.vip/goods/20210825/1629884730998_7815499.png?imageMogr2/format/webp',
     descripción: 'Elegancia pura',
   },
+  
 ];
