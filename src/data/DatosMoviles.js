@@ -26,7 +26,7 @@ export const DatosTablaMoviles = [
     color: 'Negro',
     imagen:
       'https://cdn.pocket-lint.com/r/s/1200x/assets/images/157975-phones-review-hands-on-samsung-galaxy-flip-3-review-image1-qgcb9vrlxi.jpg',
-    descripción: 'El futuro ha llegado',
+    descripción: 'El futuro es flexible',
   },
   {
     modelo: 'Redmi Note 10',
