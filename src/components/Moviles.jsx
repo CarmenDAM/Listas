@@ -66,8 +66,7 @@ class Moviles extends React.Component {
                           document.getElementById("img5").src="image1.jpg"
                         }
                         
-                      </script>*/}
-                                              
+                      </script>*/}                    
                       </tr>
                     );
                   })}
