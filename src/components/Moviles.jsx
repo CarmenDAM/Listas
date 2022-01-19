@@ -40,7 +40,7 @@ class Moviles extends React.Component {
                 <Card.Img variant="top" src={DatosTablaMoviles[2].imagen} />
                 <Card.Body>
                   <Card.Title>
-                    {DatosTablaMoviles[2].marca} {DatosTablaMoviles[2].marca}
+                    {DatosTablaMoviles[2].marca} {DatosTablaMoviles[2].so}
                   </Card.Title>
                   <Card.Text>
                     Modelo: {DatosTablaMoviles[2].modelo}

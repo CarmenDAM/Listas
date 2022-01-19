@@ -1,7 +1,7 @@
 import { Home } from '../components/Home';
 import { PaginaListas } from '../components/PaginaListas';
 import { Perfil } from '../components/Perfil';
-import Moviles from '../data/DatosMoviles';
+import Moviles from '../components/Moviles';
 
 export const MenuItems = [
   {
