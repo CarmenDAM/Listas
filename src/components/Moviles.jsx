@@ -8,7 +8,7 @@ class Moviles extends React.Component {
   render() {
     return (
       <div className="main-site">
-        <h1>Coches</h1>
+        <h1>Moviles</h1>
         <Container>
           <Row>
             <Col lg={8} md={6}>
@@ -43,7 +43,7 @@ class Moviles extends React.Component {
                     {DatosTablaMoviles[2].marca} {DatosTablaMoviles[2].so}
                   </Card.Title>
                   <Card.Text>
-                    Matrícula: {DatosTablaMoviles[2].modelo}
+                    Modelo: {DatosTablaMoviles[2].modelo}
                     <p />
                     {DatosTablaMoviles[2].descripción}
                   </Card.Text>
