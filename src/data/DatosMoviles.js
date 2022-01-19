@@ -12,12 +12,14 @@ export const DatosTablaMoviles = [
     marca: 'Apple',
     so: 'IOS 13',
     color: 'Blanco',
+    imagen:'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-silver-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652954000',
   },
   {
     modelo: 'Nokia 3310',
     marca: 'Nokia',
     so: 'Java',
     color: 'Negro',
+    imagen:'https://media.istockphoto.com/photos/nokia-3310-mobile-phone-picture-id517335694?k=20&m=517335694&s=170667a&w=0&h=OzCMXl2hN4V2j2rHtntzG1xxW_oAwT8wkm7u8Gq6GBw=',
   },
   {
     modelo: 'Samsung Galaxy Z Flip',
@@ -33,5 +35,6 @@ export const DatosTablaMoviles = [
     marca: 'Xiaomi',
     so: 'Miwi 12',
     color: 'Negro',
+    imagen:'https://img-live.goboo.vip/goods/20210825/1629884730998_7815499.png?imageMogr2/format/webp',
   },
 ];
