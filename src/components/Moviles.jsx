@@ -4,7 +4,25 @@ import { TitulosTablaMoviles, DatosTablaMoviles } from '../data/DatosMoviles';
 class Moviles extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      imagen: '',
+      nombrep: '',
+      desarrolladorp: '',
+      modop: '',
+      plataformasp: '',
+    };
   }
+
+  eventoclick(item) {
+    this.setState({
+      imagen: item.imagen,
+      nombrep: item.Nombre,
+      desarrolladorp: item.Desarrollador,
+      modop: item.Modo,
+      plataformasp: item.Plataformas,
+    });
+  }
+
   render() {
     return (
       <div className="main-site">
@@ -24,66 +42,31 @@ class Moviles extends React.Component {
                 <tbody>
                   {DatosTablaMoviles.map((item) => {
                     return (
-                      <tr>
+                      
+                         <tr onClick={() => this.eventoclick(item)}>
                         <td>{item.modelo}</td>
-                       {/* <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-silver-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652954000.jpg" id="img1" alt="primeraImagen" />
- 
-                        <script>
-                        function cambiarImagenJS(){
-                          document.getElementById("img1").src="image2.jpg"
-                        }
-                        
-                        </script>*/}
-
                         <td>{item.marca}</td>
-
-                        {/*<img src="https://media.istockphoto.com/photos/nokia-3310-mobile-phone-picture-id517335694?k=20&m=517335694&s=170667a&w=0&h=OzCMXl2hN4V2j2rHtntzG1xxW_oAwT8wkm7u8Gq6GBw=" id="img2" alt="segundaImagen" />
- 
-                          <script>
-                          function cambiarImagenJS(){
-                            document.getElementById("img2").src="image3.jpg"
-                          }
-                          
-                          </script>*/}
-
                         <td>{item.so}</td>
-
-                        {/*<img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/157975-phones-review-hands-on-samsung-galaxy-flip-3-review-image1-qgcb9vrlxi.jpg" id="img3" alt="terceraImagen" />
- 
-                        <script>
-                        function cambiarImagenJS(){
-                          document.getElementById("img4").src="image4.jpg"
-                        }
-                        
-                        </script>*/}
-
-                        <td>{item.color}</td>
-
-                       {/* <img src="https://img-live.goboo.vip/goods/20210825/1629884730998_7815499.png?imageMogr2/format/webp" id="img1" alt="cuartaImagen" />
- 
-                        <script>
-                        function cambiarImagenJS(){
-                          document.getElementById("img5").src="image1.jpg"
-                        }
-                        
-                      </script>*/}                    
+                        <td>{item.color}</td>                   
                       </tr>
                     );
                   })}
                 </tbody>
               </Table>
             </Col>
-            <Col lg={4} md={6}>
+            <Col lg={2} md={6}>
               <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={DatosTablaMoviles[2].imagen} />
+                <Card.Img variant="top" src={this.state.imagen} />
                 <Card.Body>
                   <Card.Title>
-                    {DatosTablaMoviles[2].marca} {DatosTablaMoviles[2].so}
+                    {this.state.modelop}
+                    <p />
+                    {this.state.marcap}
                   </Card.Title>
                   <Card.Text>
-                    Modelo: {DatosTablaMoviles[2].modelo}
+                    {this.state.sop}
                     <p />
-                    {DatosTablaMoviles[2].descripción}
+                    {this.state.colorp}
                   </Card.Text>
                 </Card.Body>
               </Card>
