@@ -6,20 +6,20 @@ class Moviles extends React.Component {
     super(props);
     this.state = {
       imagen: '',
-      nombrep: '',
-      desarrolladorp: '',
-      modop: '',
-      plataformasp: '',
+      modelop: '',
+      marcap: '',
+      sop: '',
+      colorp: '',
     };
   }
 
   eventoclick(item) {
     this.setState({
       imagen: item.imagen,
-      nombrep: item.Nombre,
-      desarrolladorp: item.Desarrollador,
-      modop: item.Modo,
-      plataformasp: item.Plataformas,
+      modelop: item.modelo,
+      marcap: item.marca,
+      sop: item.so,
+      colorp: item.color,
     });
   }
 
