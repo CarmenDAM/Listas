@@ -1,5 +1,6 @@
 import React from 'react';
 import Perfil from './Perfil';
+import {Usuarios} from '../data/Usuarios';
 
 
 export function Perfil() {
