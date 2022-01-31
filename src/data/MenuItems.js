@@ -2,6 +2,7 @@ import Home from '../components/Home';
 import { PaginaListas } from '../components/PaginaListas';
 import { Perfil } from '../components/Perfil';
 import Moviles from '../components/Moviles';
+import PelisMarvel from '../components/PelisMarvel';
 
 export const MenuItems = [
   {
@@ -27,6 +28,12 @@ export const MenuItems = [
     path: '/moviles',
     title: 'Moviles',
     component: Moviles,
+  },
+  {
+    id: 5,
+    path: '/marvel',
+    title: 'Marvel',
+    component: PelisMarvel,
   },
 ];
 
