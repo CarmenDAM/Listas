@@ -1,46 +1,41 @@
 import React from 'react';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
-import { TitulosTablaMoviles, DatosTablaMoviles } from '../data/DatosMoviles';
+import { TitulosTablaPelis, DatosTablaPelis } from '../data/DatosPelis';
 class PelisMarvel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       imagen: '',
-      modelop: '',
-      marcap: '',
-      sop: '',
-      colorp: '',
+      tituloop: '',
+      añop: '',
     };
   }
 
   eventoclick(item) {
     this.setState({
       imagen: item.imagen,
-      modelop: item.modelo,
-      marcap: item.marca,
-      sop: item.so,
-      colorp: item.color,
+      tituloop: item.titulo,
+      añop: item.año,
+
     });
   }
 
   render() {
     return (
       <div className="main-site">
-        <h1>Películas de Marvel Studios</h1>
+        <h1>Cronología de la Películas y Series del Universo MARVEL</h1>
         <Container>
           <Row>
             <Col lg={8} md={6}>
               <Table responsive striped>
                 <thead>
                   <tr>
-                    <th>{TitulosTablaMoviles.id}</th>
-                    <th>{TitulosTablaMoviles.field1}</th>
-                    <th>{TitulosTablaMoviles.field2}</th>
-                    <th>{TitulosTablaMoviles.field3}</th>
+                    <th>{TitulosTablaPelis.id}</th>
+                    <th>{TitulosTablaPelis.field1}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {DatosTablaMoviles.map((item) => {
+                  {DatosTablaPelis.map((item) => {
                     return (
                       
                          <tr onClick={() => this.eventoclick(item)}>
