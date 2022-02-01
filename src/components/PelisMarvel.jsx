@@ -8,6 +8,7 @@ class PelisMarvel extends React.Component {
       imagen: '',
       tituloop: '',
       añop: '',
+      formatop: '',
     };
   }
 
@@ -16,6 +17,7 @@ class PelisMarvel extends React.Component {
       imagen: item.imagen,
       tituloop: item.titulo,
       añop: item.año,
+      formatop: item.formato,
 
     });
   }
@@ -32,6 +34,7 @@ class PelisMarvel extends React.Component {
                   <tr>
                     <th>{TitulosTablaPelis.id}</th>
                     <th>{TitulosTablaPelis.field1}</th>
+                    <th>{TitulosTablaPelis.field2}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -39,10 +42,9 @@ class PelisMarvel extends React.Component {
                     return (
                       
                          <tr onClick={() => this.eventoclick(item)}>
-                        <td>{item.modelo}</td>
-                        <td>{item.marca}</td>
-                        <td>{item.so}</td>
-                        <td>{item.color}</td>                   
+                        <td>{item.titulo}</td>
+                        <td>{item.formato}</td> 
+                        <td>{item.año}</td>                 
                       </tr>
                     );
                   })}
